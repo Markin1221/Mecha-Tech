@@ -30,7 +30,7 @@ public class ModItems {
 
 	public static final Item minerArm = register(
 		"miner_arm",
-		Item::new,
+		MinerArmItem::new,
 		new Item.Properties().stacksTo(1));
 
 	public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
