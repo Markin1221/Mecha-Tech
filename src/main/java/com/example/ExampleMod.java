@@ -7,6 +7,8 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.example.items.ModItems;
+
 public class ExampleMod implements ModInitializer {
 	public static final String MOD_ID = "modid";
 
@@ -22,6 +24,7 @@ public class ExampleMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
 	}
 
 	public static Identifier id(String path) {
