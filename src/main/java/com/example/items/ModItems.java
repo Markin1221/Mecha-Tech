@@ -9,6 +9,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.resources.Identifier;
 
 import com.example.ExampleMod;
@@ -28,11 +29,13 @@ public class ModItems {
 		new Item.Properties().stacksTo(1) 
 	);
 
-	public static final Item minerArm = register(
-		"miner_arm",
-		MinerArmItem::new,
-		new Item.Properties().stacksTo(1));
-
+	public static final Item MINER_ARM = register(
+    "miner_arm",
+    MinerArmItem::new,
+    new Item.Properties()
+        .pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F)
+        .stacksTo(1)
+);
 	public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
 		ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name));
 		T item = itemFactory.apply(settings.setId(itemKey));
@@ -44,6 +47,6 @@ public class ModItems {
 		// Get the event for modifying entries in the ingredients group.
 // And register an event handler that adds our suspicious item to the ingredients group.
 CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-		.register((creativeTab) -> creativeTab.accept(ModItems.minerArm));
+		.register((creativeTab) -> creativeTab.accept(ModItems.MINER_ARM));
 	}
 }
