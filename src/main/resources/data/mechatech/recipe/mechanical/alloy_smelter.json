@@ -1,0 +1,18 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "PPPP",
+    "FBBF",
+    "PWWP"
+  ],
+  "key": {
+    "P": "mechatech:titanium_plate",
+    "F": "minecraft:furnace",
+    "B": "mechatech:basic_circuit",
+    "W": "mechatech:coated_copper_wire"
+  },
+  "result": {
+    "id": "mechatech:alloy_smelter",
+    "count": 1
+  }
+}

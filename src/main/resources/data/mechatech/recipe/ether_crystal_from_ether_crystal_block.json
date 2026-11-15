@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "mechatech:ether_crystal_block"
+  ],
+  "result": {
+    "id": "mechatech:ether_crystal",
+    "count": 9
+  }
+}

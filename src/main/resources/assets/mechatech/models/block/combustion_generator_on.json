@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "mechatech:block/combustion_generator_top",
+    "front": "mechatech:block/combustion_generator_front_on",
+    "side": "mechatech:block/combustion_generator_side"
+  }
+}

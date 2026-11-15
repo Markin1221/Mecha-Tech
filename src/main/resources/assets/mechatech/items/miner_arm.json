@@ -1,0 +1,13 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": ["gui", "ground", "fixed"],
+        "model": { "type": "minecraft:model", "model": "mechatech:item/miner_arm" }
+      }
+    ],
+    "fallback": { "type": "minecraft:model", "model": "mechatech:item/miner_arm_in_hand" }
+  }
+}

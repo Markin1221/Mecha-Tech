@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.8,
+  "ingredient": [
+    "mechatech:neodymium_ore",
+    "mechatech:deepslate_neodymium_ore"
+  ],
+  "result": {
+    "id": "mechatech:neodymium_ingot"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "  PI",
+    " PIP",
+    "SB  ",
+    "K   "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "mechatech:titanium_plate",
+    "S": "mechatech:servo_motor",
+    "B": "mechatech:basic_circuit",
+    "K": "minecraft:dried_kelp"
+  },
+  "result": {
+    "id": "mechatech:chainsaw",
+    "count": 1
+  }
+}

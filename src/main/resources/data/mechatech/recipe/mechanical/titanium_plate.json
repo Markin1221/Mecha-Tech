@@ -1,0 +1,14 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": "mechatech:titanium_ingot"
+  },
+  "result": {
+    "id": "mechatech:titanium_plate",
+    "count": 3
+  }
+}

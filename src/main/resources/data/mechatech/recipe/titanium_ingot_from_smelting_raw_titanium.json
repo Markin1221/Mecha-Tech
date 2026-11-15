@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "mechatech:raw_titanium",
+  "result": {
+    "id": "mechatech:titanium_ingot"
+  }
+}

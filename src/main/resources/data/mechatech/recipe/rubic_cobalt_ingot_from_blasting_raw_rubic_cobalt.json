@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": "mechatech:raw_rubic_cobalt",
+  "result": {
+    "id": "mechatech:rubic_cobalt_ingot"
+  }
+}

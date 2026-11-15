@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "mechaarmorsking",
+  "id": "mechatech",
   "version": "${version}",
-  "name": "mecha Armors King",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Mecha-Tech",
+  "description": "Mechas modulares e customizáveis: ferramentas, exo-armaduras e mechas pilotáveis montados peça por peça.",
   "authors": ["markin1221"],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/mecha-Armors-King"
+    "homepage": "https://github.com/markin1221/Mecha-Tech",
+    "sources": "https://github.com/markin1221/Mecha-Tech"
   },
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/mechatech/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.example.ExampleMod"],
-    "client": ["com.example.client.ExampleModClient"]
+    "main": ["com.markin.mechatech.MechaTech"],
+    "client": ["com.markin.mechatech.client.MechaTechClient"]
   },
   "mixins": [
-    "modid.mixins.json",
+    "mechatech.mixins.json",
     {
-      "config": "modid.client.mixins.json",
+      "config": "mechatech.client.mixins.json",
       "environment": "client"
     }
   ],

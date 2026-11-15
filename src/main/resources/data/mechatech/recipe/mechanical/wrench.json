@@ -1,0 +1,17 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    " I I",
+    "  PI",
+    " P  ",
+    "P   "
+  ],
+  "key": {
+    "I": "mechatech:titanium_ingot",
+    "P": "mechatech:titanium_plate"
+  },
+  "result": {
+    "id": "mechatech:wrench",
+    "count": 1
+  }
+}

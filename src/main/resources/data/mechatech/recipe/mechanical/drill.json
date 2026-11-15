@@ -1,0 +1,20 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "   I",
+    "  II",
+    " SB ",
+    "KP  "
+  ],
+  "key": {
+    "I": "mechatech:titanium_ingot",
+    "S": "mechatech:servo_motor",
+    "B": "mechatech:basic_circuit",
+    "P": "mechatech:titanium_plate",
+    "K": "minecraft:dried_kelp"
+  },
+  "result": {
+    "id": "mechatech:drill",
+    "count": 1
+  }
+}

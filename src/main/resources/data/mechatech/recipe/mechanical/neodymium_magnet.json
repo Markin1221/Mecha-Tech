@@ -1,0 +1,14 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "RNNR"
+  ],
+  "key": {
+    "R": "minecraft:redstone",
+    "N": "mechatech:neodymium_ingot"
+  },
+  "result": {
+    "id": "mechatech:neodymium_magnet",
+    "count": 2
+  }
+}

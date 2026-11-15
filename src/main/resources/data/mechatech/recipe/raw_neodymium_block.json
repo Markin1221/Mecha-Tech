@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "mechatech:raw_neodymium"
+  },
+  "result": {
+    "id": "mechatech:raw_neodymium_block",
+    "count": 1
+  }
+}

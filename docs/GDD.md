@@ -1,7 +1,7 @@
 # Mecha-Tech — Documento de Design (GDD)
 
 > Mod Fabric · Minecraft 26.1.2 · Java 25
-> Status: rascunho v0.1. Tudo aqui pode mudar.
+> Status: rascunho v0.2. Tudo aqui pode mudar.
 
 ## 1. Visão geral
 
@@ -59,7 +59,7 @@ Sistema próprio e simples: **Energia Mecânica (EM)**.
 - **Gerador a Combustão:** queima carvão ou lava e gera EM.
 - **Painel / Gerador de Éter** (late game).
 - As máquinas ficam com EM armazenada. A armadura e os mechas usam **Células de Energia** onde pode ser recarregada em qualquer gerador ou um **Núcleo de Energia**.
-- Opcional no futuro: compatibilidade com Team Reborn Energy (padrão Fabric).
+- **Compatível com outros mods de energia:** as máquinas expõem a API do Team Reborn Energy (padrão no Fabric). Assim, cabos e geradores de outros mods (Tech Reborn, Modern Industrialization etc.) conectam direto.
 
 ---
 
@@ -158,6 +158,32 @@ O mecha soma os atributos. Se passar do peso máximo do torso, ele fica lento ou
 - HUD com energia, integridade de cada peça e arma ativa.
 - Peças podem ser danificadas separadamente. Um braço destruído para de funcionar.
 
+### 6.6 Acesso e dono
+- Por padrão, **qualquer jogador** pode entrar e pilotar um mecha.
+- O **Módulo de Trava** (slot de utilidade) restringe o uso ao dono e a quem ele autorizar.
+
+### 6.7 Interação com o mundo
+- Mechas **quebram blocos** (brocas, serras, garras, construtor em área) e **causam dano no mundo** (explosões de armas pesadas, pisadas de mechas grandes).
+- Config do servidor para desligar a destruição do mundo (griefing).
+
+## 6A. Inimigos e chefes
+
+**Mechas hostis** aparecem pelo mundo. Variedade por tier:
+| Inimigo | Onde | Tier |
+|---|---|---|
+| Drone Sucateiro | Overworld, à noite / ruínas | 1 |
+| Mecha Patrulheiro | Ruínas tecnológicas (estrutura nova) | 2 |
+| Mecha Infernal | Nether, perto de Cobalto Rúbeo | 3 |
+| **Colosso de Éter** (chefe) | End, arena própria | 4 |
+
+**Desmontagem de inimigos**
+1. Mecha derrotado **cai** e vira uma carcaça (entidade/bloco) no chão.
+2. Com a **Chave de Desmontagem**, o jogador abre o **puzzle de desmontagem**: um minigame de soltar parafusos/cabos na ordem certa.
+3. Cada erro tem chance de **quebrar a peça** (vira sucata). Acertos soltam a peça intacta.
+4. Peças inimigas podem ser **usadas ou melhoradas** no seu mecha, e algumas são exclusivas (só caem de inimigos).
+
+**Ruínas Tecnológicas:** estrutura gerada com baús de componentes e mechas patrulheiros de guarda.
+
 ---
 
 ## 7. Abordagem técnica (resumo)
@@ -172,7 +198,7 @@ O mecha soma os atributos. Se passar do peso máximo do torso, ele fica lento ou
 - **Interface da cabine:** Screen própria com preview 3D da entidade.
 - **Mundo:** minérios via worldgen data-driven (configured/placed features).
 
-> Observação: o projeto ainda usa o id/pacote de exemplo (`com.example`, `modid`, "mecha Armors King"). Sugestão: renomear para `mechatech` / `com.markin.mechatech`.
+> Id do mod: `mechatech` · pacote: `com.markin.mechatech`.
 
 ---
 
@@ -186,15 +212,15 @@ O mecha soma os atributos. Se passar do peso máximo do torso, ele fica lento ou
 6. **T2 (peças):** multibloco Forja de Peças + itens-peça com atributos
 7. **T2 (mecha):** entidade, pilotagem, renderização modular
 8. **Montadora:** multibloco + animação de montagem
-9. **T3/T4:** peças avançadas, armas, Titã
-10. **Polimento:** sons, partículas, livro-guia, balanceamento
+9. **Inimigos:** mechas hostis, carcaça + puzzle de desmontagem, ruínas
+10. **T3/T4:** peças avançadas, armas, Titã, chefe Colosso de Éter
+11. **Polimento:** sons, partículas, livro-guia, balanceamento
 
 ---
 
-## 9. Perguntas em aberto
-
-- Os mechas podem ser usados por outros jogadores (multiplayer) ou ter "dono"? vc tem um modulo que pode trancar mas de base qualquer um pode usar
-- O mecha deve quebrar blocos ou causar dano ao mundo? (combate x construção) sim
-- Vai ter inimigos novos (ex.: mechas hostis ou chefes) para justificar o combate? sim, com eles vc pode coletar peças pra melhoria de mecha tbm, quando ele for derrotado ele cai e vc pode desmontar ele(com um puzzle que pode quebrar as pelas)
-- Energia própria ou compatível com outros mods tech? propria mas que funcione com qualquer outro mod de energia
-- Os nomes dos minérios estão bons ou você prefere outros? gostei
+## 9. Decisões tomadas
+- Mechas: qualquer um usa; Módulo de Trava restringe.
+- Mechas quebram blocos e causam dano ao mundo.
+- Haverá inimigos/chefes; derrotados viram carcaça desmontável via puzzle (peças podem quebrar).
+- Energia própria (EM), compatível com outros mods via Team Reborn Energy.
+- Nomes dos minérios aprovados.

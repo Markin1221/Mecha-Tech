@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "mechatech:neodymium_ingot"
+  },
+  "result": {
+    "id": "mechatech:neodymium_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "mechatech:rubic_cobalt_ingot"
+  },
+  "result": {
+    "id": "mechatech:rubic_cobalt_block",
+    "count": 1
+  }
+}

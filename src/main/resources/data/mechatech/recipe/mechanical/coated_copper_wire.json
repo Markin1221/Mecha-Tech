@@ -1,0 +1,16 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "KKKK",
+    "CCCC",
+    "KKKK"
+  ],
+  "key": {
+    "K": "minecraft:dried_kelp",
+    "C": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "mechatech:coated_copper_wire",
+    "count": 8
+  }
+}

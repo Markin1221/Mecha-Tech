@@ -18,7 +18,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"mechatech" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -34,6 +34,10 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Team Reborn Energy: energia compatível com Tech Reborn e outros mods tech
+	implementation "teamreborn:energy:${project.energy_version}"
+	include "teamreborn:energy:${project.energy_version}"
 	
 }
 

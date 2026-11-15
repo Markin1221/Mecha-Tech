@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "mechatech:titanium_ingot"
+  },
+  "result": {
+    "id": "mechatech:titanium_block",
+    "count": 1
+  }
+}

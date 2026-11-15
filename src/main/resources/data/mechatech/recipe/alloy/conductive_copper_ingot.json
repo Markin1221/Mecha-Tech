@@ -1,0 +1,16 @@
+{
+  "type": "mechatech:alloy_smelting",
+  "first": {
+    "ingredient": "minecraft:copper_ingot",
+    "count": 1
+  },
+  "second": {
+    "ingredient": "minecraft:redstone",
+    "count": 2
+  },
+  "result": {
+    "id": "mechatech:conductive_copper_ingot",
+    "count": 1
+  },
+  "time": 120
+}

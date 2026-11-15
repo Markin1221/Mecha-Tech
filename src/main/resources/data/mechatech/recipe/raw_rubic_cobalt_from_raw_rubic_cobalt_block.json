@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "mechatech:raw_rubic_cobalt_block"
+  ],
+  "result": {
+    "id": "mechatech:raw_rubic_cobalt",
+    "count": 9
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "I#i",
+    " # ",
+    " B "
+  ],
+  "key": {
+    "I": "minecraft:iron_axe",
+    "#": "mechatech:titanium_ingot",
+    "i": "minecraft:iron_pickaxe",
+    "B": "minecraft:iron_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "mechatech:miner_arm"
+  }
+}

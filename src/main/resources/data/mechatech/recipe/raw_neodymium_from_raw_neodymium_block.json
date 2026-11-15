@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "mechatech:raw_neodymium_block"
+  ],
+  "result": {
+    "id": "mechatech:raw_neodymium",
+    "count": 9
+  }
+}

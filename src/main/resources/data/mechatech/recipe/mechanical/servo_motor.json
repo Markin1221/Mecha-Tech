@@ -1,0 +1,19 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    " PP ",
+    "MWWM",
+    "MIIM",
+    " PP "
+  ],
+  "key": {
+    "P": "mechatech:titanium_plate",
+    "M": "mechatech:neodymium_magnet",
+    "W": "mechatech:coated_copper_wire",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "mechatech:servo_motor",
+    "count": 1
+  }
+}

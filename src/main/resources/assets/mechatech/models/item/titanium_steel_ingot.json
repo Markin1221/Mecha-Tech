@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mechatech:item/titanium_steel_ingot"
+  }
+}

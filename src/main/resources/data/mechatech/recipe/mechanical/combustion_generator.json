@@ -1,0 +1,18 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "PPP",
+    "PFP",
+    "WBW"
+  ],
+  "key": {
+    "P": "mechatech:titanium_plate",
+    "F": "minecraft:furnace",
+    "W": "mechatech:coated_copper_wire",
+    "B": "mechatech:basic_circuit"
+  },
+  "result": {
+    "id": "mechatech:combustion_generator",
+    "count": 1
+  }
+}

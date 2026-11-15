@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TTT",
+    "ICI",
+    "IRI"
+  ],
+  "key": {
+    "T": "mechatech:titanium_ingot",
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:crafting_table",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "mechatech:mechanical_workbench",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "WRRW",
+    "GPPG"
+  ],
+  "key": {
+    "W": "mechatech:coated_copper_wire",
+    "R": "minecraft:redstone",
+    "G": "minecraft:gold_nugget",
+    "P": "mechatech:titanium_plate"
+  },
+  "result": {
+    "id": "mechatech:basic_circuit",
+    "count": 2
+  }
+}
