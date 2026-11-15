@@ -3,7 +3,9 @@
 	"package": "com.markin.mechatech.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"MechaTechClientMixin"
+		"MechaTechClientMixin",
+		"HideMechaPilotMixin",
+		"HideMechaHandsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

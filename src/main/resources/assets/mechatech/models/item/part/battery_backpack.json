@@ -1,10 +1,10 @@
 {
  "textures": {
-  "mid": "mechatech:item/part/mid",
-  "glow": "mechatech:item/part/glow",
-  "plate": "mechatech:item/part/plate",
-  "accent": "mechatech:item/part/accent",
   "glass": "mechatech:item/part/glass",
+  "glow": "mechatech:item/part/glow",
+  "accent": "mechatech:item/part/accent",
+  "plate": "mechatech:item/part/plate",
+  "mid": "mechatech:item/part/mid",
   "dark": "mechatech:item/part/dark",
   "particle": "mechatech:item/part/plate"
  },

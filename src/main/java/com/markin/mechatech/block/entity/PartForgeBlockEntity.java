@@ -125,8 +125,15 @@ public class PartForgeBlockEntity extends MachineBlockEntity implements MenuProv
 
 	private void sync() {
 		setChanged();
-		if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+		if (level instanceof ServerLevel sl) {
+			var pkt = getUpdatePacket();
+			for (net.minecraft.server.level.ServerPlayer p : net.fabricmc.fabric.api.networking.v1.PlayerLookup.tracking(this)) {
+				p.connection.send(pkt);
+			}
+		}
 	}
+
+	private int idle;
 
 	@Override
 	public net.minecraft.network.protocol.Packet<net.minecraft.network.protocol.game.ClientGamePacketListener> getUpdatePacket() {
@@ -169,13 +176,16 @@ public class PartForgeBlockEntity extends MachineBlockEntity implements MenuProv
 			be.setBuilding("", 0);
 		}
 		// Sem energia no meio: pausa a animação
-		if (!working && !be.buildingVariant.isEmpty() && level.getGameTime() % 20 == 0) {
+		if (!working && !be.buildingVariant.isEmpty() && level.getGameTime() % 40 == 0) {
 			be.buildStart = level.getGameTime() - be.progress;
 			be.sync();
 		}
 
-		if (state.getValue(com.markin.mechatech.block.PartForgeBlock.LIT) != working) {
-			level.setBlock(pos, state.setValue(com.markin.mechatech.block.PartForgeBlock.LIT, working), 3);
+		// LIT só desliga depois de 2 s parada (senão o bloco é redesenhado a cada tick)
+		be.idle = working ? 0 : be.idle + 1;
+		boolean lit = working || (be.idle < 40 && state.getValue(com.markin.mechatech.block.PartForgeBlock.LIT));
+		if (state.getValue(com.markin.mechatech.block.PartForgeBlock.LIT) != lit) {
+			level.setBlock(pos, state.setValue(com.markin.mechatech.block.PartForgeBlock.LIT, lit), 3);
 		}
 	}
 

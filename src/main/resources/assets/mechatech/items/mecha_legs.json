@@ -24,6 +24,69 @@
      "type": "minecraft:model",
      "model": "mechatech:item/part/jumper_legs"
     }
+   },
+   {
+    "when": "biped_legs_hip",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/biped_legs_hip"
+    }
+   },
+   {
+    "when": "biped_legs_l",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/biped_legs_l"
+    }
+   },
+   {
+    "when": "biped_legs_r",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/biped_legs_r"
+    }
+   },
+   {
+    "when": "tread_legs_hip",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/tread_legs_hip"
+    }
+   },
+   {
+    "when": "tread_legs_l",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/tread_legs_l"
+    }
+   },
+   {
+    "when": "tread_legs_r",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/tread_legs_r"
+    }
+   },
+   {
+    "when": "jumper_legs_hip",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/jumper_legs_hip"
+    }
+   },
+   {
+    "when": "jumper_legs_l",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/jumper_legs_l"
+    }
+   },
+   {
+    "when": "jumper_legs_r",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/jumper_legs_r"
+    }
    }
   ],
   "fallback": {

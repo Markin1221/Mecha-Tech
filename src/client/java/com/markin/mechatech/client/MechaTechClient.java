@@ -20,7 +20,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 public class MechaTechClient implements ClientModInitializer {
-	private static boolean wasRiding;
+	private static boolean wasRiding, wasUse;
 	private static net.minecraft.client.CameraType previousCamera;
 
 	@Override
@@ -46,7 +46,17 @@ public class MechaTechClient implements ClientModInitializer {
 				mc.options.setCameraType(previousCamera);
 			}
 			wasRiding = riding;
+			MechaHud.tick();
+			// Botão direito dentro do mecha = habilidade do braço
+			boolean use = riding && mc.screen == null && mc.options.keyUse.isDown();
+			if (use && !wasUse) net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.send(new com.markin.mechatech.network.MechaActionPayload(0));
+			wasUse = use;
 		});
+		// Painel do piloto (e esconde os corações de montaria do vanilla)
+		net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry.addLast(com.markin.mechatech.MechaTech.id("mecha_hud"), MechaHud::render);
+		net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry.replaceElement(
+			net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements.MOUNT_HEALTH,
+			old -> (g, dt) -> { if (MechaHud.mecha() == null) old.extractRenderState(g, dt); });
 
 		// Animação da Forja de Peças
 		BlockEntityRenderers.register(ModBlockEntities.PART_FORGE, PartForgeRenderer::new);

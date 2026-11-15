@@ -1,8 +1,8 @@
 {
  "textures": {
   "glow": "mechatech:item/part/glow",
-  "plate": "mechatech:item/part/plate",
   "accent": "mechatech:item/part/accent",
+  "plate": "mechatech:item/part/plate",
   "mid": "mechatech:item/part/mid",
   "dark": "mechatech:item/part/dark",
   "particle": "mechatech:item/part/plate"

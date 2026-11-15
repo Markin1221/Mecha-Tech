@@ -79,7 +79,9 @@ public class MechaAssemblerRenderer implements BlockEntityRenderer<MechaAssemble
 		pose.pushPose();
 		pose.translate(0.5 + h * (r.getStepX() + b.getStepX()), 0.25, 0.5 + h * (r.getStepZ() + b.getStepZ()));
 		pose.mulPose(Axis.YP.rotationDegrees(180f - s.facing.toYRot()));
-		MechaPose.submit(s.parts, pose, collector, 0xF000F0, 0, 0, s.shown, s.installing, s.size * 0.55f);
+		MechaPose.Anim a = new MechaPose.Anim();
+		a.age = s.time;
+		MechaPose.submit(s.parts, pose, collector, 0xF000F0, a, s.shown, s.installing, s.size * 0.55f);
 		pose.popPose();
 	}
 

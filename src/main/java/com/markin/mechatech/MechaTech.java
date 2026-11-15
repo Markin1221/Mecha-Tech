@@ -34,6 +34,7 @@ public class MechaTech implements ModInitializer {
 		ModCreativeTab.initialize();
 		ModWorldGen.initialize();
 		com.markin.mechatech.entity.ModEntities.initialize();
+		com.markin.mechatech.entity.MechaAbilities.register();
 		ExoArmorHandler.register();
 
 		LOGGER.info("Mecha-Tech carregado!");

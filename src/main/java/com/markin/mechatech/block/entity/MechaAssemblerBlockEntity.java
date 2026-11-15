@@ -47,6 +47,7 @@ public class MechaAssemblerBlockEntity extends MachineBlockEntity implements Men
 	private int progress, total = 1, status;
 	private long buildStart;
 	private int signature;
+	private int stall; // ticks seguidos sem energia
 
 	public final ContainerData data = new ContainerData() {
 		@Override
@@ -144,6 +145,7 @@ public class MechaAssemblerBlockEntity extends MachineBlockEntity implements Men
 			be.total = parts * PART_TIME;
 			if (be.energy.amount >= USAGE) {
 				if (be.progress == 0 || be.status != BUILDING) be.buildStart = level.getGameTime() - be.progress;
+				be.stall = 0;
 				be.energy.amount -= USAGE;
 				be.progress++;
 				be.status = BUILDING;
@@ -158,8 +160,9 @@ public class MechaAssemblerBlockEntity extends MachineBlockEntity implements Men
 				}
 				if (be.progress >= be.total) be.finish(level, pos, d);
 			} else {
-				be.status = NO_POWER;
-				be.buildStart = level.getGameTime() - be.progress;
+				// Energia chegando aos pouquinhos: não fica trocando de estado a cada tick
+				be.buildStart++;
+				if (++be.stall >= 40) be.status = NO_POWER;
 			}
 			be.setChanged();
 		}
@@ -170,7 +173,8 @@ public class MechaAssemblerBlockEntity extends MachineBlockEntity implements Men
 			ItemStack s = be.items.get(i);
 			sig = sig * 31 + (s.isEmpty() ? 0 : s.getItem().hashCode() ^ java.util.Objects.hashCode(s.get(ModComponents.MECHA_PART)));
 		}
-		if (sig != be.signature || old != be.status) {
+		boolean resync = be.status == BUILDING && level.getGameTime() % 40 == 0; // corrige o relógio da animação
+		if (sig != be.signature || old != be.status || resync) {
 			be.signature = sig;
 			be.sync();
 		}
@@ -209,9 +213,15 @@ public class MechaAssemblerBlockEntity extends MachineBlockEntity implements Men
 	}
 
 	// ===== Sync =====
+	/** Manda só os dados da entidade pros jogadores perto (sem refazer o modelo do bloco = sem travar). */
 	private void sync() {
 		setChanged();
-		if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+		if (level instanceof ServerLevel sl) {
+			Packet<ClientGamePacketListener> pkt = getUpdatePacket();
+			for (net.minecraft.server.level.ServerPlayer p : net.fabricmc.fabric.api.networking.v1.PlayerLookup.tracking(this)) {
+				p.connection.send(pkt);
+			}
+		}
 	}
 
 	@Override

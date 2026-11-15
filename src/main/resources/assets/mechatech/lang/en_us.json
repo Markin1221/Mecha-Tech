@@ -156,5 +156,16 @@
  "gui.mechatech.slot.arm_left": "Left arm",
  "gui.mechatech.slot.arm_right": "Right arm",
  "gui.mechatech.slot.legs": "Legs",
- "gui.mechatech.slot.backpack": "Backpack (optional)"
+ "gui.mechatech.slot.backpack": "Backpack (optional)",
+ "hud.mechatech.title": "MECHA  %s%%",
+ "hud.mechatech.integrity": "INTEGRITY",
+ "hud.mechatech.energy": "ENERGY",
+ "hud.mechatech.speed": "%s m/s   Y %s",
+ "hud.mechatech.systems": "SYSTEMS",
+ "hud.mechatech.shield_on": "SHIELD",
+ "hud.mechatech.use_key": "[Right click] use",
+ "hud.mechatech.no_energy": "NO ENERGY",
+ "hud.mechatech.low_energy": "LOW ENERGY",
+ "hud.mechatech.overweight": "OVERLOAD",
+ "container.mechatech.mecha_storage": "Mecha Storage"
 }
