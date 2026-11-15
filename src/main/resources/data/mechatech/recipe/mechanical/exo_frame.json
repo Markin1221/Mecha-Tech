@@ -1,0 +1,19 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "TPPT",
+    "SBBS",
+    "TPPT",
+    "T  T"
+  ],
+  "key": {
+    "T": "mechatech:titanium_steel_ingot",
+    "P": "mechatech:titanium_plate",
+    "S": "mechatech:servo_motor",
+    "B": "mechatech:basic_circuit"
+  },
+  "result": {
+    "id": "mechatech:exo_frame",
+    "count": 1
+  }
+}

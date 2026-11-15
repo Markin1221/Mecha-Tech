@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.markin.mechatech.block.ModBlocks;
+import com.markin.mechatech.component.ModComponents;
+import com.markin.mechatech.exo.ExoArmorHandler;
 import com.markin.mechatech.block.entity.ModBlockEntities;
 import com.markin.mechatech.items.ModCreativeTab;
 import com.markin.mechatech.items.ModItems;
@@ -22,13 +24,17 @@ public class MechaTech implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModComponents.initialize();
 		ModBlocks.initialize();
+		com.markin.mechatech.mecha.MechaParts.initialize();
 		ModBlockEntities.initialize();
 		ModItems.initialize();
 		ModRecipes.initialize();
 		ModMenus.initialize();
 		ModCreativeTab.initialize();
 		ModWorldGen.initialize();
+		com.markin.mechatech.entity.ModEntities.initialize();
+		ExoArmorHandler.register();
 
 		LOGGER.info("Mecha-Tech carregado!");
 	}

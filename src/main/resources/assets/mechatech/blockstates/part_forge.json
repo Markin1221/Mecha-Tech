@@ -1,0 +1,244 @@
+{
+ "variants": {
+  "facing=north,lit=false,part=0": {
+   "model": "mechatech:block/part_forge/seg0"
+  },
+  "facing=north,lit=true,part=0": {
+   "model": "mechatech:block/part_forge/seg0"
+  },
+  "facing=north,lit=false,part=1": {
+   "model": "mechatech:block/part_forge/seg1"
+  },
+  "facing=north,lit=true,part=1": {
+   "model": "mechatech:block/part_forge/seg1"
+  },
+  "facing=north,lit=false,part=2": {
+   "model": "mechatech:block/part_forge/seg2"
+  },
+  "facing=north,lit=true,part=2": {
+   "model": "mechatech:block/part_forge/seg2"
+  },
+  "facing=north,lit=false,part=3": {
+   "model": "mechatech:block/part_forge/seg3"
+  },
+  "facing=north,lit=true,part=3": {
+   "model": "mechatech:block/part_forge/seg3"
+  },
+  "facing=north,lit=false,part=4": {
+   "model": "mechatech:block/part_forge/seg4"
+  },
+  "facing=north,lit=true,part=4": {
+   "model": "mechatech:block/part_forge/seg4"
+  },
+  "facing=north,lit=false,part=5": {
+   "model": "mechatech:block/part_forge/seg5"
+  },
+  "facing=north,lit=true,part=5": {
+   "model": "mechatech:block/part_forge/seg5"
+  },
+  "facing=north,lit=false,part=6": {
+   "model": "mechatech:block/part_forge/seg6"
+  },
+  "facing=north,lit=true,part=6": {
+   "model": "mechatech:block/part_forge/seg6"
+  },
+  "facing=north,lit=false,part=7": {
+   "model": "mechatech:block/part_forge/seg7"
+  },
+  "facing=north,lit=true,part=7": {
+   "model": "mechatech:block/part_forge/seg7"
+  },
+  "facing=east,lit=false,part=0": {
+   "model": "mechatech:block/part_forge/seg0",
+   "y": 90
+  },
+  "facing=east,lit=true,part=0": {
+   "model": "mechatech:block/part_forge/seg0",
+   "y": 90
+  },
+  "facing=east,lit=false,part=1": {
+   "model": "mechatech:block/part_forge/seg1",
+   "y": 90
+  },
+  "facing=east,lit=true,part=1": {
+   "model": "mechatech:block/part_forge/seg1",
+   "y": 90
+  },
+  "facing=east,lit=false,part=2": {
+   "model": "mechatech:block/part_forge/seg2",
+   "y": 90
+  },
+  "facing=east,lit=true,part=2": {
+   "model": "mechatech:block/part_forge/seg2",
+   "y": 90
+  },
+  "facing=east,lit=false,part=3": {
+   "model": "mechatech:block/part_forge/seg3",
+   "y": 90
+  },
+  "facing=east,lit=true,part=3": {
+   "model": "mechatech:block/part_forge/seg3",
+   "y": 90
+  },
+  "facing=east,lit=false,part=4": {
+   "model": "mechatech:block/part_forge/seg4",
+   "y": 90
+  },
+  "facing=east,lit=true,part=4": {
+   "model": "mechatech:block/part_forge/seg4",
+   "y": 90
+  },
+  "facing=east,lit=false,part=5": {
+   "model": "mechatech:block/part_forge/seg5",
+   "y": 90
+  },
+  "facing=east,lit=true,part=5": {
+   "model": "mechatech:block/part_forge/seg5",
+   "y": 90
+  },
+  "facing=east,lit=false,part=6": {
+   "model": "mechatech:block/part_forge/seg6",
+   "y": 90
+  },
+  "facing=east,lit=true,part=6": {
+   "model": "mechatech:block/part_forge/seg6",
+   "y": 90
+  },
+  "facing=east,lit=false,part=7": {
+   "model": "mechatech:block/part_forge/seg7",
+   "y": 90
+  },
+  "facing=east,lit=true,part=7": {
+   "model": "mechatech:block/part_forge/seg7",
+   "y": 90
+  },
+  "facing=south,lit=false,part=0": {
+   "model": "mechatech:block/part_forge/seg0",
+   "y": 180
+  },
+  "facing=south,lit=true,part=0": {
+   "model": "mechatech:block/part_forge/seg0",
+   "y": 180
+  },
+  "facing=south,lit=false,part=1": {
+   "model": "mechatech:block/part_forge/seg1",
+   "y": 180
+  },
+  "facing=south,lit=true,part=1": {
+   "model": "mechatech:block/part_forge/seg1",
+   "y": 180
+  },
+  "facing=south,lit=false,part=2": {
+   "model": "mechatech:block/part_forge/seg2",
+   "y": 180
+  },
+  "facing=south,lit=true,part=2": {
+   "model": "mechatech:block/part_forge/seg2",
+   "y": 180
+  },
+  "facing=south,lit=false,part=3": {
+   "model": "mechatech:block/part_forge/seg3",
+   "y": 180
+  },
+  "facing=south,lit=true,part=3": {
+   "model": "mechatech:block/part_forge/seg3",
+   "y": 180
+  },
+  "facing=south,lit=false,part=4": {
+   "model": "mechatech:block/part_forge/seg4",
+   "y": 180
+  },
+  "facing=south,lit=true,part=4": {
+   "model": "mechatech:block/part_forge/seg4",
+   "y": 180
+  },
+  "facing=south,lit=false,part=5": {
+   "model": "mechatech:block/part_forge/seg5",
+   "y": 180
+  },
+  "facing=south,lit=true,part=5": {
+   "model": "mechatech:block/part_forge/seg5",
+   "y": 180
+  },
+  "facing=south,lit=false,part=6": {
+   "model": "mechatech:block/part_forge/seg6",
+   "y": 180
+  },
+  "facing=south,lit=true,part=6": {
+   "model": "mechatech:block/part_forge/seg6",
+   "y": 180
+  },
+  "facing=south,lit=false,part=7": {
+   "model": "mechatech:block/part_forge/seg7",
+   "y": 180
+  },
+  "facing=south,lit=true,part=7": {
+   "model": "mechatech:block/part_forge/seg7",
+   "y": 180
+  },
+  "facing=west,lit=false,part=0": {
+   "model": "mechatech:block/part_forge/seg0",
+   "y": 270
+  },
+  "facing=west,lit=true,part=0": {
+   "model": "mechatech:block/part_forge/seg0",
+   "y": 270
+  },
+  "facing=west,lit=false,part=1": {
+   "model": "mechatech:block/part_forge/seg1",
+   "y": 270
+  },
+  "facing=west,lit=true,part=1": {
+   "model": "mechatech:block/part_forge/seg1",
+   "y": 270
+  },
+  "facing=west,lit=false,part=2": {
+   "model": "mechatech:block/part_forge/seg2",
+   "y": 270
+  },
+  "facing=west,lit=true,part=2": {
+   "model": "mechatech:block/part_forge/seg2",
+   "y": 270
+  },
+  "facing=west,lit=false,part=3": {
+   "model": "mechatech:block/part_forge/seg3",
+   "y": 270
+  },
+  "facing=west,lit=true,part=3": {
+   "model": "mechatech:block/part_forge/seg3",
+   "y": 270
+  },
+  "facing=west,lit=false,part=4": {
+   "model": "mechatech:block/part_forge/seg4",
+   "y": 270
+  },
+  "facing=west,lit=true,part=4": {
+   "model": "mechatech:block/part_forge/seg4",
+   "y": 270
+  },
+  "facing=west,lit=false,part=5": {
+   "model": "mechatech:block/part_forge/seg5",
+   "y": 270
+  },
+  "facing=west,lit=true,part=5": {
+   "model": "mechatech:block/part_forge/seg5",
+   "y": 270
+  },
+  "facing=west,lit=false,part=6": {
+   "model": "mechatech:block/part_forge/seg6",
+   "y": 270
+  },
+  "facing=west,lit=true,part=6": {
+   "model": "mechatech:block/part_forge/seg6",
+   "y": 270
+  },
+  "facing=west,lit=false,part=7": {
+   "model": "mechatech:block/part_forge/seg7",
+   "y": 270
+  },
+  "facing=west,lit=true,part=7": {
+   "model": "mechatech:block/part_forge/seg7",
+   "y": 270
+  }
+ }
+}

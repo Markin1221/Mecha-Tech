@@ -1,0 +1,177 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "glass": "mechatech:block/cabin_glass",
+  "door": "mechatech:block/cabin_door",
+  "metal": "mechatech:block/cabin_wall",
+  "trim": "mechatech:block/cabin_trim",
+  "inner": "mechatech:block/cabin_inner",
+  "floor": "mechatech:block/cabin_floor",
+  "light": "mechatech:block/cabin_light",
+  "particle": "mechatech:block/cabin_wall"
+ },
+ "elements": [
+  {
+   "from": [
+    6.525,
+    2.8,
+    0.5
+   ],
+   "to": [
+    9.475,
+    16,
+    1.0
+   ],
+   "rotation": {
+    "origin": [
+     8.0,
+     2.8,
+     0.75
+    ],
+    "x": 0,
+    "y": -0.0,
+    "z": 0
+   },
+   "faces": {
+    "north": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    6.0161,
+    2.8,
+    0.1912
+   ],
+   "to": [
+    7.1161,
+    16,
+    1.3912
+   ],
+   "rotation": {
+    "origin": [
+     6.5661,
+     2.8,
+     0.7912
+    ],
+    "x": 0,
+    "y": 11.25,
+    "z": 0
+   },
+   "faces": {
+    "north": {
+     "texture": "#trim"
+    },
+    "south": {
+     "texture": "#trim"
+    },
+    "east": {
+     "texture": "#trim"
+    },
+    "west": {
+     "texture": "#trim"
+    },
+    "up": {
+     "texture": "#trim"
+    },
+    "down": {
+     "texture": "#trim"
+    }
+   }
+  },
+  {
+   "from": [
+    6.475,
+    8,
+    0.25
+   ],
+   "to": [
+    9.525,
+    9.2,
+    0.95
+   ],
+   "rotation": {
+    "origin": [
+     8.0,
+     8,
+     0.6
+    ],
+    "x": 0,
+    "y": -0.0,
+    "z": 0
+   },
+   "faces": {
+    "north": {
+     "texture": "#trim"
+    },
+    "south": {
+     "texture": "#trim"
+    },
+    "east": {
+     "texture": "#trim"
+    },
+    "west": {
+     "texture": "#trim"
+    },
+    "up": {
+     "texture": "#trim"
+    },
+    "down": {
+     "texture": "#trim"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "type": "mechatech:mechanical_crafting",
+ "pattern": [
+  "PGGP",
+  "SAES",
+  "INNI"
+ ],
+ "key": {
+  "P": "mechatech:titanium_plate",
+  "G": "minecraft:glass",
+  "S": "mechatech:servo_motor",
+  "A": "mechatech:mecha_assembler_4",
+  "E": "mechatech:ether_crystal",
+  "I": "minecraft:iron_block",
+  "N": "mechatech:neodymium_magnet"
+ },
+ "result": {
+  "id": "mechatech:mecha_assembler_5",
+  "count": 1
+ }
+}

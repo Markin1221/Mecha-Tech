@@ -1,0 +1,17 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "PCP",
+    "WXW"
+  ],
+  "key": {
+    "P": "mechatech:titanium_plate",
+    "C": "mechatech:basic_circuit",
+    "W": "mechatech:coated_copper_wire",
+    "X": "minecraft:feather"
+  },
+  "result": {
+    "id": "mechatech:module_fall_damping",
+    "count": 1
+  }
+}

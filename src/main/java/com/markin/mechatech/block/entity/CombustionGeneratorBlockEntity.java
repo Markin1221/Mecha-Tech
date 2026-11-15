@@ -2,10 +2,12 @@ package com.markin.mechatech.block.entity;
 
 import com.markin.mechatech.block.MachineBlock;
 import com.markin.mechatech.energy.EnergyHelper;
+import com.markin.mechatech.energy.NeighborEnergy;
 import com.markin.mechatech.menu.CombustionGeneratorMenu;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -24,6 +26,7 @@ public class CombustionGeneratorBlockEntity extends MachineBlockEntity implement
 	public static final int GENERATION = 20;   // EM por tick queimando
 	public static final int OUTPUT = 64;       // EM por tick por lado
 
+	private final NeighborEnergy neighbors = new NeighborEnergy();
 	private int burnTime;
 	private int burnTimeTotal;
 
@@ -85,8 +88,8 @@ public class CombustionGeneratorBlockEntity extends MachineBlockEntity implement
 			}
 		}
 
-		if (be.energy.amount > 0) {
-			EnergyHelper.pushToNeighbors(level, pos, be.energy, OUTPUT);
+		if (be.energy.amount > 0 && level instanceof ServerLevel sl) {
+			EnergyHelper.pushToNeighbors(sl, pos, be.neighbors, be.energy, OUTPUT);
 		}
 
 		boolean burning = be.burnTime > 0;

@@ -1,0 +1,20 @@
+{
+ "type": "mechatech:mechanical_crafting",
+ "pattern": [
+  "PGGP",
+  "CAAC",
+  "SWWS"
+ ],
+ "key": {
+  "P": "mechatech:titanium_plate",
+  "G": "minecraft:glass",
+  "C": "mechatech:basic_circuit",
+  "S": "mechatech:servo_motor",
+  "A": "minecraft:anvil",
+  "W": "mechatech:coated_copper_wire"
+ },
+ "result": {
+  "id": "mechatech:part_forge",
+  "count": 1
+ }
+}

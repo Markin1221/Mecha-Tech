@@ -1,0 +1,135 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "glass": "mechatech:block/cabin_glass",
+  "door": "mechatech:block/cabin_door",
+  "metal": "mechatech:block/cabin_wall",
+  "trim": "mechatech:block/cabin_trim",
+  "inner": "mechatech:block/cabin_inner",
+  "floor": "mechatech:block/cabin_floor",
+  "light": "mechatech:block/cabin_light",
+  "particle": "mechatech:block/cabin_wall"
+ },
+ "elements": [
+  {
+   "from": [
+    3.7505,
+    0,
+    14.4481
+   ],
+   "to": [
+    6.7005,
+    12.4,
+    14.9481
+   ],
+   "rotation": {
+    "origin": [
+     5.2255,
+     0,
+     14.6981
+    ],
+    "x": 0,
+    "y": -202.5,
+    "z": 0
+   },
+   "faces": {
+    "north": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#glass",
+     "uv": [
+      6.6,
+      0,
+      9.55,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    3.6431,
+    5,
+    14.4867
+   ],
+   "to": [
+    6.6931,
+    6.2,
+    15.1867
+   ],
+   "rotation": {
+    "origin": [
+     5.1681,
+     5,
+     14.8367
+    ],
+    "x": 0,
+    "y": -202.5,
+    "z": 0
+   },
+   "faces": {
+    "north": {
+     "texture": "#trim"
+    },
+    "south": {
+     "texture": "#trim"
+    },
+    "east": {
+     "texture": "#trim"
+    },
+    "west": {
+     "texture": "#trim"
+    },
+    "up": {
+     "texture": "#trim"
+    },
+    "down": {
+     "texture": "#trim"
+    }
+   }
+  }
+ ]
+}

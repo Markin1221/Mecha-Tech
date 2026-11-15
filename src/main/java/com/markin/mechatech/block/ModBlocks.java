@@ -78,6 +78,24 @@ public class ModBlocks {
 	public static final Block ENERGY_CABLE = register("energy_cable", EnergyCableBlock::new,
 		BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(0.6F).noOcclusion());
 
+	public static final Block CALIBRATION_CABIN = register("calibration_cabin", CalibrationCabinBlock::new,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(4.0F, 8.0F).noOcclusion()
+			.lightLevel(state -> 7));
+
+	// ===== Forja de Peças (máquina 2x2x2) =====
+	public static final Block PART_FORGE = register("part_forge", PartForgeBlock::new,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(4.0F, 8.0F).noOcclusion()
+			.lightLevel(state -> state.getValue(PartForgeBlock.LIT) ? 12 : 6));
+
+	// ===== Montadora de Mecha (3x3x3, 4x4x4, 5x5x5) =====
+	public static final Block MECHA_ASSEMBLER_3 = register("mecha_assembler_3", MechaAssemblerBlock.Small::new, assemblerProps());
+	public static final Block MECHA_ASSEMBLER_4 = register("mecha_assembler_4", MechaAssemblerBlock.Medium::new, assemblerProps());
+	public static final Block MECHA_ASSEMBLER_5 = register("mecha_assembler_5", MechaAssemblerBlock.Large::new, assemblerProps());
+
+	private static BlockBehaviour.Properties assemblerProps() {
+		return BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(5.0F, 10.0F).noOcclusion().lightLevel(s -> 7);
+	}
+
 	private static Block register(String name, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties properties) {
 		ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, MechaTech.id(name));
 		Block block = factory.apply(properties.setId(blockKey));

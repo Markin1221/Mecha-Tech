@@ -31,6 +31,33 @@ public class ModCreativeTab {
 				output.accept(ModItems.CHAINSAW);
 				output.accept(ModItems.WRENCH);
 
+				// Exo-armadura
+				output.accept(ModBlocks.CALIBRATION_CABIN);
+				output.accept(ModItems.EXO_FRAME);
+				output.accept(ModItems.EXO_HELMET);
+				output.accept(ModItems.EXO_CHESTPLATE);
+				output.accept(ModItems.EXO_LEGGINGS);
+				output.accept(ModItems.EXO_BOOTS);
+				output.accept(ModItems.MODULE_NIGHT_VISION);
+				output.accept(ModItems.MODULE_WATER_BREATHING);
+				output.accept(ModItems.MODULE_STRENGTH);
+				output.accept(ModItems.MODULE_RESISTANCE);
+				output.accept(ModItems.MODULE_SPEED);
+				output.accept(ModItems.MODULE_STEP_ASSIST);
+				output.accept(ModItems.MODULE_JUMP_BOOST);
+				output.accept(ModItems.MODULE_FALL_DAMPING);
+
+				// Forja de Peças
+				output.accept(ModBlocks.PART_FORGE);
+				output.accept(ModBlocks.MECHA_ASSEMBLER_3);
+				output.accept(ModBlocks.MECHA_ASSEMBLER_4);
+				output.accept(ModBlocks.MECHA_ASSEMBLER_5);
+				for (com.markin.mechatech.mecha.PartType t : com.markin.mechatech.mecha.PartType.values()) {
+					for (com.markin.mechatech.mecha.PartVariant v : com.markin.mechatech.mecha.MechaParts.of(t)) {
+						output.accept(com.markin.mechatech.block.entity.PartForgeBlockEntity.createPart(v, 100));
+					}
+				}
+
 				// Componentes
 				output.accept(ModItems.TITANIUM_STEEL_INGOT);
 				output.accept(ModItems.CONDUCTIVE_COPPER_INGOT);

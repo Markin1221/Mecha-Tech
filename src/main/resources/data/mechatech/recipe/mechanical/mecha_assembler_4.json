@@ -1,0 +1,21 @@
+{
+ "type": "mechatech:mechanical_crafting",
+ "pattern": [
+  "PGGP",
+  "SACS",
+  "IRRI"
+ ],
+ "key": {
+  "P": "mechatech:titanium_plate",
+  "G": "minecraft:glass",
+  "S": "mechatech:servo_motor",
+  "A": "mechatech:mecha_assembler_3",
+  "C": "mechatech:basic_circuit",
+  "I": "minecraft:iron_block",
+  "R": "mechatech:rubic_cobalt_ingot"
+ },
+ "result": {
+  "id": "mechatech:mecha_assembler_4",
+  "count": 1
+ }
+}

@@ -24,6 +24,13 @@ loom {
 		}
 	}
 
+	// Limita a memória do jogo de teste (pra rodar junto com outro jogo)
+	runs {
+		client {
+			vmArgs "-Xms512M", "-Xmx2G", "-XX:+UseG1GC", "-XX:MaxGCPauseMillis=50"
+		}
+	}
+
 }
 
 dependencies {

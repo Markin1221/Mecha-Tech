@@ -1,21 +1,26 @@
 {
-  "values": [
-    "mechatech:titanium_ore",
-    "mechatech:deepslate_titanium_ore",
-    "mechatech:neodymium_ore",
-    "mechatech:deepslate_neodymium_ore",
-    "mechatech:rubic_cobalt_ore",
-    "mechatech:ether_crystal_ore",
-    "mechatech:titanium_block",
-    "mechatech:neodymium_block",
-    "mechatech:rubic_cobalt_block",
-    "mechatech:raw_titanium_block",
-    "mechatech:raw_neodymium_block",
-    "mechatech:raw_rubic_cobalt_block",
-    "mechatech:ether_crystal_block",
-    "mechatech:mechanical_workbench",
-    "mechatech:combustion_generator",
-    "mechatech:alloy_smelter",
-    "mechatech:energy_cable"
-  ]
+ "values": [
+  "mechatech:titanium_ore",
+  "mechatech:deepslate_titanium_ore",
+  "mechatech:neodymium_ore",
+  "mechatech:deepslate_neodymium_ore",
+  "mechatech:rubic_cobalt_ore",
+  "mechatech:ether_crystal_ore",
+  "mechatech:titanium_block",
+  "mechatech:neodymium_block",
+  "mechatech:rubic_cobalt_block",
+  "mechatech:raw_titanium_block",
+  "mechatech:raw_neodymium_block",
+  "mechatech:raw_rubic_cobalt_block",
+  "mechatech:ether_crystal_block",
+  "mechatech:mechanical_workbench",
+  "mechatech:combustion_generator",
+  "mechatech:alloy_smelter",
+  "mechatech:energy_cable",
+  "mechatech:calibration_cabin",
+  "mechatech:part_forge",
+  "mechatech:mecha_assembler_3",
+  "mechatech:mecha_assembler_4",
+  "mechatech:mecha_assembler_5"
+ ]
 }

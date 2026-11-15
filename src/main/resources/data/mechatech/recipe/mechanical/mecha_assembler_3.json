@@ -1,0 +1,20 @@
+{
+ "type": "mechatech:mechanical_crafting",
+ "pattern": [
+  "PGGP",
+  "SCCS",
+  "IWWI"
+ ],
+ "key": {
+  "P": "mechatech:titanium_plate",
+  "G": "minecraft:glass",
+  "S": "mechatech:servo_motor",
+  "C": "mechatech:basic_circuit",
+  "I": "minecraft:iron_block",
+  "W": "mechatech:coated_copper_wire"
+ },
+ "result": {
+  "id": "mechatech:mecha_assembler_3",
+  "count": 1
+ }
+}

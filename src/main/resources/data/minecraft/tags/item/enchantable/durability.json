@@ -2,6 +2,10 @@
   "values": [
     "mechatech:drill",
     "mechatech:chainsaw",
-    "mechatech:wrench"
+    "mechatech:wrench",
+    "mechatech:exo_helmet",
+    "mechatech:exo_chestplate",
+    "mechatech:exo_leggings",
+    "mechatech:exo_boots"
   ]
 }

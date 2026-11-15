@@ -1,0 +1,1 @@
+{"textures":{"asm_rib":"mechatech:block/asm_rib","particle":"mechatech:block/forge_frame"},"elements":[{"from":[11.0,0.0,0.0],"to":[15.5,16.0,16.0],"faces":{"east":{"texture":"#asm_rib","uv":[0,0,16,16]},"west":{"texture":"#asm_rib","uv":[0,0,16,16]},"up":{"texture":"#asm_rib","uv":[11.0,0,15.5,16]}}}]}

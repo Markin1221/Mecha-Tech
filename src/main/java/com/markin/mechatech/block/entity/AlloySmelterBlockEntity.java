@@ -31,6 +31,9 @@ public class AlloySmelterBlockEntity extends MachineBlockEntity implements MenuP
 	public static final int INPUT = 128;     // EM por tick que aceita
 
 	private int progress;
+	// Cache da receita: só procura de novo quando as entradas mudam
+	private ItemStack cachedA = ItemStack.EMPTY, cachedB = ItemStack.EMPTY;
+	private Optional<RecipeHolder<AlloySmeltingRecipe>> cachedRecipe = Optional.empty();
 	private int progressTotal = 200;
 
 	public final ContainerData data = new ContainerData() {
@@ -69,9 +72,7 @@ public class AlloySmelterBlockEntity extends MachineBlockEntity implements MenuP
 		if (!(level instanceof ServerLevel serverLevel)) return;
 
 		AlloyInput input = new AlloyInput(be.items.get(0), be.items.get(1));
-		Optional<RecipeHolder<AlloySmeltingRecipe>> recipe = input.first().isEmpty() || input.second().isEmpty()
-			? Optional.empty()
-			: serverLevel.recipeAccess().getRecipeFor(ModRecipes.ALLOY_SMELTING, input, serverLevel);
+		Optional<RecipeHolder<AlloySmeltingRecipe>> recipe = be.findRecipe(serverLevel, input);
 
 		boolean working = false;
 		if (recipe.isPresent() && be.canOutput(recipe.get().value().assemble(input))) {
@@ -94,6 +95,22 @@ public class AlloySmelterBlockEntity extends MachineBlockEntity implements MenuP
 		if (state.getValue(MachineBlock.LIT) != working) {
 			level.setBlock(pos, state.setValue(MachineBlock.LIT, working), 3);
 		}
+	}
+
+	private Optional<RecipeHolder<AlloySmeltingRecipe>> findRecipe(ServerLevel level, AlloyInput input) {
+		if (input.first().isEmpty() || input.second().isEmpty()) {
+			cachedA = ItemStack.EMPTY;
+			cachedB = ItemStack.EMPTY;
+			return cachedRecipe = Optional.empty();
+		}
+		boolean same = ItemStack.isSameItemSameComponents(input.first(), cachedA) && input.first().getCount() == cachedA.getCount()
+			&& ItemStack.isSameItemSameComponents(input.second(), cachedB) && input.second().getCount() == cachedB.getCount();
+		if (!same) {
+			cachedA = input.first().copy();
+			cachedB = input.second().copy();
+			cachedRecipe = level.recipeAccess().getRecipeFor(ModRecipes.ALLOY_SMELTING, input, level);
+		}
+		return cachedRecipe;
 	}
 
 	private boolean canOutput(ItemStack result) {

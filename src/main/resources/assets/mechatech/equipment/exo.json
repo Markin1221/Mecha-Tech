@@ -1,0 +1,26 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mechatech:exo",
+        "dyeable": {
+          "color_when_undyed": -11896616
+        }
+      },
+      {
+        "texture": "mechatech:exo_overlay"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mechatech:exo",
+        "dyeable": {
+          "color_when_undyed": -11896616
+        }
+      },
+      {
+        "texture": "mechatech:exo_overlay"
+      }
+    ]
+  }
+}

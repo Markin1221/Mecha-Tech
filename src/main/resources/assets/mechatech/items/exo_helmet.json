@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "mechatech:item/exo_helmet",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": -11896616
+      }
+    ]
+  }
+}

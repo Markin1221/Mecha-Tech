@@ -1,0 +1,55 @@
+{
+ "model": {
+  "type": "minecraft:select",
+  "property": "minecraft:custom_model_data",
+  "index": 0,
+  "cases": [
+   {
+    "when": "fist_arm",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/fist_arm"
+    }
+   },
+   {
+    "when": "drill_arm",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/drill_arm"
+    }
+   },
+   {
+    "when": "saw_arm",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/saw_arm"
+    }
+   },
+   {
+    "when": "cannon_arm",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/cannon_arm"
+    }
+   },
+   {
+    "when": "claw_arm",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/claw_arm"
+    }
+   },
+   {
+    "when": "shield_arm",
+    "model": {
+     "type": "minecraft:model",
+     "model": "mechatech:item/part/shield_arm"
+    }
+   }
+  ],
+  "fallback": {
+   "type": "minecraft:model",
+   "model": "mechatech:item/mecha_arm"
+  }
+ }
+}

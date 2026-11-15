@@ -1,0 +1,1236 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "half": "lower"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_lower"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "2|3|4|5|6|7|8|9|10|11|12|13|14"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_0"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "3|4|5|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_1"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|4|5|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_2"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|5|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_3"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_4"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_5"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_6"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_7"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_8"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|7|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_9"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|7|8|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_10"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|7|8|9|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_11"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|7|8|9|10|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_12"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|7|8|9|10|11|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_13"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "0|1|2|3|4|5|6|7|8|9|10|11|12"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_14"
+   }
+  },
+  {
+   "when": {
+    "half": "lower",
+    "door": "1|2|3|4|5|6|7|8|9|10|11|12|13"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_lower_15"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "0",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "15",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "14",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "13",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_0"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "1",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "0",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "15",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "14",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_1"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "2",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "1",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "0",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "15",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_2"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "3",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "2",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "1",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "0",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_3"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "4",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "3",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "2",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "1",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_4"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "5",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "4",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "3",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "2",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_5"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "6",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "5",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "4",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "3",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_6"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "7",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "6",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "5",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "4",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_7"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "8",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "7",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "6",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "5",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_8"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "9",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "8",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "7",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "6",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_9"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "10",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "9",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "8",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "7",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_10"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "11",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "10",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "9",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "8",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_11"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "12",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "11",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "10",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "9",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_12"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "13",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "12",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "11",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "10",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_13"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "14",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "13",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "12",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "11",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_14"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "lower",
+      "door": "15",
+      "open": "0"
+     },
+     {
+      "half": "lower",
+      "door": "14",
+      "open": "1"
+     },
+     {
+      "half": "lower",
+      "door": "13",
+      "open": "2"
+     },
+     {
+      "half": "lower",
+      "door": "12",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_lower_15"
+   }
+  },
+  {
+   "when": {
+    "half": "upper"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_upper"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "2|3|4|5|6|7|8|9|10|11|12|13|14"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_0"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "3|4|5|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_1"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|4|5|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_2"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|5|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_3"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|6|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_4"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|7|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_5"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|8|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_6"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|9|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_7"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|10|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_8"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|7|11|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_9"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|7|8|12|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_10"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|7|8|9|13|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_11"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|7|8|9|10|14|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_12"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|7|8|9|10|11|15"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_13"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "0|1|2|3|4|5|6|7|8|9|10|11|12"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_14"
+   }
+  },
+  {
+   "when": {
+    "half": "upper",
+    "door": "1|2|3|4|5|6|7|8|9|10|11|12|13"
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_wall_upper_15"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "0",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "15",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "14",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "13",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_0"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "1",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "0",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "15",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "14",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_1"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "2",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "1",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "0",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "15",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_2"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "3",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "2",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "1",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "0",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_3"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "4",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "3",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "2",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "1",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_4"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "5",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "4",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "3",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "2",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_5"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "6",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "5",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "4",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "3",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_6"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "7",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "6",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "5",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "4",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_7"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "8",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "7",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "6",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "5",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_8"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "9",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "8",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "7",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "6",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_9"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "10",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "9",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "8",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "7",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_10"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "11",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "10",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "9",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "8",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_11"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "12",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "11",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "10",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "9",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_12"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "13",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "12",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "11",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "10",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_13"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "14",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "13",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "12",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "11",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_14"
+   }
+  },
+  {
+   "when": {
+    "OR": [
+     {
+      "half": "upper",
+      "door": "15",
+      "open": "0"
+     },
+     {
+      "half": "upper",
+      "door": "14",
+      "open": "1"
+     },
+     {
+      "half": "upper",
+      "door": "13",
+      "open": "2"
+     },
+     {
+      "half": "upper",
+      "door": "12",
+      "open": "3"
+     }
+    ]
+   },
+   "apply": {
+    "model": "mechatech:block/calibration_cabin_door_upper_15"
+   }
+  }
+ ]
+}

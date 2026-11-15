@@ -1,0 +1,740 @@
+{
+ "textures": {
+  "forge_glass": "mechatech:block/forge_glass",
+  "trim": "mechatech:block/cabin_trim",
+  "forge_pad": "mechatech:block/forge_pad",
+  "forge_wall": "mechatech:block/forge_wall",
+  "forge_glow": "mechatech:block/forge_glow",
+  "forge_hazard": "mechatech:block/forge_hazard",
+  "forge_frame": "mechatech:block/forge_frame",
+  "particle": "mechatech:block/forge_frame"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    2,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      14,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    2,
+    0.5
+   ],
+   "to": [
+    15.5,
+    3.5,
+    16
+   ],
+   "faces": {
+    "up": {
+     "texture": "#forge_pad",
+     "uv": [
+      0,
+      0.5,
+      15.5,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      0.5,
+      15.5,
+      16
+     ]
+    },
+    "north": {
+     "texture": "#forge_hazard",
+     "uv": [
+      0,
+      12.5,
+      15.5,
+      14.0
+     ]
+    },
+    "east": {
+     "texture": "#trim",
+     "uv": [
+      0.5,
+      12.5,
+      16,
+      14.0
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    3.5,
+    1
+   ],
+   "to": [
+    15,
+    4,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      12,
+      15,
+      12.5
+     ]
+    },
+    "east": {
+     "texture": "#trim",
+     "uv": [
+      1,
+      12,
+      16,
+      12.5
+     ]
+    },
+    "up": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      1,
+      15,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      1,
+      15,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    11,
+    3.5,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_frame",
+     "uv": [
+      11,
+      0,
+      16,
+      12.5
+     ]
+    },
+    "south": {
+     "texture": "#forge_frame",
+     "uv": [
+      11,
+      0,
+      16,
+      12.5
+     ]
+    },
+    "east": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      0,
+      5,
+      12.5
+     ]
+    },
+    "west": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      0,
+      5,
+      12.5
+     ]
+    },
+    "down": {
+     "texture": "#forge_frame",
+     "uv": [
+      11,
+      0,
+      16,
+      5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    11.5,
+    4,
+    0.5
+   ],
+   "to": [
+    15.5,
+    16,
+    4.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_frame",
+     "uv": [
+      11.5,
+      0,
+      15.5,
+      12
+     ]
+    },
+    "south": {
+     "texture": "#forge_frame",
+     "uv": [
+      11.5,
+      0,
+      15.5,
+      12
+     ]
+    },
+    "east": {
+     "texture": "#forge_frame",
+     "uv": [
+      0.5,
+      0,
+      4.5,
+      12
+     ]
+    },
+    "west": {
+     "texture": "#forge_frame",
+     "uv": [
+      0.5,
+      0,
+      4.5,
+      12
+     ]
+    },
+    "down": {
+     "texture": "#forge_frame",
+     "uv": [
+      11.5,
+      0.5,
+      15.5,
+      4.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    13,
+    7,
+    -0.3
+   ],
+   "to": [
+    14,
+    16,
+    0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_glow",
+     "uv": [
+      13,
+      0,
+      14,
+      9
+     ]
+    }
+   },
+   "light_emission": 13
+  },
+  {
+   "from": [
+    0,
+    4,
+    1.8
+   ],
+   "to": [
+    11,
+    16,
+    2.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_glass",
+     "uv": [
+      0,
+      0,
+      11,
+      12
+     ]
+    },
+    "south": {
+     "texture": "#forge_glass",
+     "uv": [
+      0,
+      0,
+      11,
+      12
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    3.5,
+    0.8
+   ],
+   "to": [
+    11,
+    4.5,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      11.5,
+      11,
+      12.5
+     ]
+    },
+    "south": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      11.5,
+      11,
+      12.5
+     ]
+    },
+    "east": {
+     "texture": "#trim",
+     "uv": [
+      0.8,
+      11.5,
+      3.0,
+      12.5
+     ]
+    },
+    "up": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      0.8,
+      11,
+      3.0
+     ]
+    },
+    "down": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      0.8,
+      11,
+      3.0
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    11,
+    4,
+    5
+   ],
+   "to": [
+    15.5,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_wall",
+     "uv": [
+      11,
+      0,
+      15.5,
+      12
+     ]
+    },
+    "east": {
+     "texture": "#forge_wall",
+     "uv": [
+      5,
+      0,
+      16,
+      12
+     ]
+    },
+    "west": {
+     "texture": "#forge_wall",
+     "uv": [
+      5,
+      0,
+      16,
+      12
+     ]
+    },
+    "down": {
+     "texture": "#forge_wall",
+     "uv": [
+      11,
+      5,
+      15.5,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    15.4,
+    9,
+    9
+   ],
+   "to": [
+    15.7,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_glass",
+     "uv": [
+      15.4,
+      0,
+      15.7,
+      7
+     ]
+    },
+    "east": {
+     "texture": "#forge_glass",
+     "uv": [
+      9,
+      0,
+      16,
+      7
+     ]
+    },
+    "west": {
+     "texture": "#forge_glass",
+     "uv": [
+      9,
+      0,
+      16,
+      7
+     ]
+    },
+    "down": {
+     "texture": "#forge_glass",
+     "uv": [
+      15.4,
+      9,
+      15.7,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    4,
+    9
+   ],
+   "to": [
+    7,
+    5,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      11,
+      7,
+      12
+     ]
+    },
+    "east": {
+     "texture": "#trim",
+     "uv": [
+      9,
+      11,
+      16,
+      12
+     ]
+    },
+    "up": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      9,
+      7,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#trim",
+     "uv": [
+      0,
+      9,
+      7,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    5,
+    11
+   ],
+   "to": [
+    5,
+    6,
+    16
+   ],
+   "faces": {
+    "up": {
+     "texture": "#forge_pad",
+     "uv": [
+      0,
+      11,
+      5,
+      16
+     ]
+    },
+    "north": {
+     "texture": "#forge_frame",
+     "uv": [
+      0,
+      10,
+      5,
+      11
+     ]
+    },
+    "east": {
+     "texture": "#forge_frame",
+     "uv": [
+      11,
+      10,
+      16,
+      11
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    6,
+    12.5
+   ],
+   "to": [
+    3.5,
+    6.4,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_glow",
+     "uv": [
+      0,
+      9.6,
+      3.5,
+      10.0
+     ]
+    },
+    "east": {
+     "texture": "#forge_glow",
+     "uv": [
+      12.5,
+      9.6,
+      16,
+      10.0
+     ]
+    },
+    "up": {
+     "texture": "#forge_glow",
+     "uv": [
+      0,
+      12.5,
+      3.5,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#forge_glow",
+     "uv": [
+      0,
+      12.5,
+      3.5,
+      16
+     ]
+    }
+   },
+   "light_emission": 12
+  },
+  {
+   "from": [
+    8.5,
+    11,
+    13
+   ],
+   "to": [
+    11,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_frame",
+     "uv": [
+      8.5,
+      0,
+      11.0,
+      5
+     ]
+    },
+    "east": {
+     "texture": "#forge_frame",
+     "uv": [
+      13,
+      0,
+      16,
+      5
+     ]
+    },
+    "west": {
+     "texture": "#forge_frame",
+     "uv": [
+      13,
+      0,
+      16,
+      5
+     ]
+    },
+    "down": {
+     "texture": "#forge_frame",
+     "uv": [
+      8.5,
+      13,
+      11.0,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    8.5,
+    13.5,
+    14.5
+   ],
+   "to": [
+    10.6,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#forge_glow",
+     "uv": [
+      8.5,
+      0,
+      10.6,
+      2.5
+     ]
+    },
+    "east": {
+     "texture": "#forge_glow",
+     "uv": [
+      14.5,
+      0,
+      16,
+      2.5
+     ]
+    },
+    "west": {
+     "texture": "#forge_glow",
+     "uv": [
+      14.5,
+      0,
+      16,
+      2.5
+     ]
+    },
+    "down": {
+     "texture": "#forge_glow",
+     "uv": [
+      8.5,
+      14.5,
+      10.6,
+      16
+     ]
+    }
+   },
+   "light_emission": 10
+  }
+ ]
+}

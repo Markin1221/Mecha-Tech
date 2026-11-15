@@ -1,0 +1,19 @@
+{
+  "type": "mechatech:mechanical_crafting",
+  "pattern": [
+    "TTTT",
+    "TGGT",
+    "TBBT",
+    "PPPP"
+  ],
+  "key": {
+    "T": "mechatech:titanium_steel_ingot",
+    "G": "minecraft:glass",
+    "B": "mechatech:basic_circuit",
+    "P": "mechatech:titanium_plate"
+  },
+  "result": {
+    "id": "mechatech:calibration_cabin",
+    "count": 1
+  }
+}
